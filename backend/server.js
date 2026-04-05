@@ -1,5 +1,5 @@
 const express = require("express")
-const PORT = 4545
+const PORT = process.env.PORT || 4545
 const cors = require("cors")
 const startServer = require("./database/index")
 const passport = require('passport')
