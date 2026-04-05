@@ -14,7 +14,7 @@ const LoginForm = () => {
 
   const handleFormOnChange = (e) => {
     if (authError) clearError();
-    
+
     const { name, value } = e.target
     setLoginAuthorForm({
       ...loginAuthorForm,
@@ -35,6 +35,22 @@ const LoginForm = () => {
       console.log(error)
     }
   }
+
+  const handleGuestLogin = async () => {
+    const guestCredentials = {
+      email: 'alex.rivers@example.com',
+      password: 'password123'
+    };
+
+    try {
+      const result = await loginAndGetToken(guestCredentials);
+      if (result && result.token) {
+        navigate('/', { replace: true });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Form onSubmit={handleFormSubmit}>
@@ -74,6 +90,24 @@ const LoginForm = () => {
       >
         {authIsLoading ? <Spinner size="sm" /> : 'Log in'}
       </Button>
+
+      <div className="text-center mt-3">
+        <div className="d-flex align-items-center mb-2">
+          <hr className="flex-grow-1 text-muted" />
+          <span className="mx-2 small text-muted">OR</span>
+          <hr className="flex-grow-1 text-muted" />
+        </div>
+        
+        <Button 
+          variant="outline-dark" 
+          size="sm"
+          className="w-100 py-2 fw-bold" 
+          onClick={handleGuestLogin}
+          disabled={authIsLoading}
+        >
+          Login as Guest
+        </Button>
+      </div>
     </Form>
   )
 }
