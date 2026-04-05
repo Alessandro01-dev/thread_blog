@@ -2,7 +2,6 @@ import { formatDistanceToNow } from 'date-fns'
 import './SingleComment.css'
 import { ActionIcon, Rating } from '@mantine/core';
 import { useAuth } from '../../../../contexts/AuthContext';
-import DeleteIcon from '../../../../assets/DeleteIcon'
 import { Trash2 } from 'lucide-react';
 
 const SingleComment = ({ comment, onDelete }) => {
