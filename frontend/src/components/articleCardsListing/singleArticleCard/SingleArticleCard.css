@@ -1,0 +1,20 @@
+.article-card-main-container {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.article-card-main-container:hover {
+  transform: scale(1.01);
+  color: #0a58ca;
+}
+
+.article-author-avatar-container {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.article-author-avatar-container img {
+  min-width: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+}

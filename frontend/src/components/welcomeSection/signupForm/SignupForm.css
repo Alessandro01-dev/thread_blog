@@ -1,0 +1,13 @@
+input,
+select,
+textarea {
+  box-shadow: none !important;
+}
+
+textarea {
+  height: 300px !important;
+}
+
+.avatar-image-mode-selection {
+  cursor: pointer
+}

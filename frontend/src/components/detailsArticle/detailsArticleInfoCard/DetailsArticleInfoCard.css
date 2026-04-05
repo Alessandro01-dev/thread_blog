@@ -1,0 +1,8 @@
+.blog-post-author-avatar-container {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.blog-post-author-avatar-container img {
+  border-radius: 50%;
+}

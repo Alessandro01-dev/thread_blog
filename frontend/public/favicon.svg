@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100">
+  <!-- Sfondo Circolare Bianco -->
+  <circle cx="50" cy="50" r="48" fill="white" />
+  
+  <!-- La "T" rimpicciolita al 18% e ricentrata -->
+  <g transform="translate(-1, 160) scale(0.18, -0.18)" fill="black">
+    <path d="M140 755 c0 -12 14 -15 65 -15 l65 0 0 -160 c0 -153 1 -160 20 -160 19 0 20 7 20 160 l0 160 65 0 c51 0 65 3 65 15 0 13 -23 15 -150 15 -127 0 -150 -2 -150 -15z" />
+  </g>
+</svg>

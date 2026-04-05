@@ -1,0 +1,8 @@
+.comment-area-container div:first-of-type div {
+  cursor: pointer;
+}
+
+.comment-area-container div:first-of-type div:hover p {
+  color: black !important;
+  text-decoration: underline;
+}

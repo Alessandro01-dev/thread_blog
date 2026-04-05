@@ -1,0 +1,51 @@
+.navbar-main-container {
+  box-shadow: 0 4px 2px -2px gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.navbar-logo-container svg {
+  transition: all 0.5s ease-in-out;
+  width: 180px;
+  object-fit: cover;
+}
+
+.shrinked-logo svg {
+  transition: all 0.5s ease-in-out;
+  width: 120px;
+}
+
+.post-article-btn {
+  text-wrap: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+
+.shrinked-btn {
+  transition: all 0.5s ease-in-out;
+  font-size: 12px;
+}
+
+.login-icon-svg {
+  transition: all 0.5s ease-in-out;
+  width: 32px;
+  height: 32px;
+}
+
+.shrinked-login-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.login-text {
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.shrinked-login-text {
+  font-size: 11px;
+}

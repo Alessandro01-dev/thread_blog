@@ -1,0 +1,24 @@
+.add-comment-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 0;
+  border-bottom: 1px solid #cecece;
+  border-top: 1px solid #cecece;
+}
+
+.add-comment-author-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.add-comment-author-profile-picture-container {
+  width: 32px;
+  height: 32px;
+}
+
+.add-comment-author-profile-picture-container img {
+  border-radius: 50%;
+}

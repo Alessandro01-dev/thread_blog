@@ -1,0 +1,9 @@
+.article-content {
+  text-align: start;
+}
+
+.article-content img {
+  display: block;
+  width: 100% !important;
+  object-fit: cover;
+}
